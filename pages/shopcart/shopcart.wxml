@@ -1,0 +1,31 @@
+<!--pages/detail/detail.wxml-->
+<view class="list" wx:for="{{carts}}">
+  <view class="choose">
+    <view class="option {{item.selected == true?'selected':'selected1'}}" data-num="{{index}}" bindtap="selected" ></view>
+  </view>
+  <view class="imgages">
+    <image class="navimg" src="../../images/57d0d400Nfd249af4.jpg!q70.jpg"></image>
+  </view>
+  <view class="info">
+    <text class="title">{{item.title}}</text>
+    <text class="specify">重量：0.506kg; 规格：曜石黑,64GB</text>
+    <text class="charge">￥<text>{{item.price}}</text></text>
+    <view class="buy-num">
+      <text class="add" bindtap="addNum" data-num="{{index}}">+</text>
+      <text class="goodsNum">{{item.num}}</text>
+      <text class="sub" bindtap="subNum" data-num="{{index}}">-</text>
+    </view>
+  </view>
+</view>
+<!--底部-->
+<view class="footer">
+  <view class="allchoice choose">
+    <view class="option {{selectAll == true?'selectedall':'selected1'}}" bindtap="selectedAll"></view>全选
+  </view>
+  <view class="gotonext">结算({{selectNum}}件)</view>
+  <view class="total">总计:
+    <text class="money">￥{{totalPrice}}</text>
+     <text class="other">不含运费,已优惠50.00</text>
+  </view>
+  
+</view>

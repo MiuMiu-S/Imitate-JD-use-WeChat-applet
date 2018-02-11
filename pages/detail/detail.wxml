@@ -1,0 +1,14 @@
+<!--pages/detail/detail.wxml-->
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view> </view>
+<text>Apple iPhone 7 (A1660) 32G 黑色 移动联通电信4G手机</text>
+<text>商品ID{{productId}}</text>

@@ -1,0 +1,83 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view scroll-y bindscrolltolower="demo" style="height: {{refreshHeight}}px;">
+    <view class="jdheader">
+      <image class="jdlogo" src="../../images/logo.jpg" background-size="cover"></image>
+      <view class="nav" class="jdsearch" bindtap="searchgoods">搜索商品</view>
+    </view>
+    <view class="nav">
+      <view class="navbar">
+        <image class="navimg" src="../../images/nav1.jpg" background-size="cover"></image>
+        <text>领优惠卷</text>
+      </view>
+      <view class="navbar" bindtap="scanQR">
+        <image class="navimg" src="../../images/nav2.jpg" background-size="cover"></image>
+        <text>扫码购物</text>
+      </view>
+      <view class="navbar">
+        <image class="navimg" src="../../images/nav1.jpg" background-size="cover"></image>
+        <text>物流查询</text>
+      </view>
+      <view class="navbar">
+        <image class="navimg" src="../../images/nav2.jpg" background-size="cover"></image>
+        <text>商品分类</text>
+      </view>
+    </view>
+    <!--秒杀部分开始-->
+    <view class="seckill">
+      <text class="ms">今日秒杀</text>
+      <view class="timewarp">
+        <view class="line"></view>
+        <view class="asd" data-num="1" bindtap="changepro">
+          <view class="{{_num == 1?'active':'active1'}}">14:00</view>
+          <text class="{{_num == 1?'active':'active1'}}">抢购中</text>
+        </view>
+        <view class="asd" data-num="2" bindtap="changepro">
+          <view class="{{_num == 2?'active':'active1'}}">16:00</view>
+          <text class="{{_num == 2?'active':'active1'}}">即将开始</text>
+        </view>
+        <view class="asd" data-num="3" bindtap="changepro">
+          <view class="{{_num == 3?'active':'active1'}}">18:00</view>
+          <text class="{{_num == 3?'active':'active1'}}">即将开始</text>
+        </view>
+        <view class="asd" data-num="4" bindtap="changepro">
+          <view class="{{_num == 4?'active':'ee'}}">20:00</view>
+          <text class="{{_num == 4?'active':'ee'}}">即将开始</text>
+        </view>
+        <view class="asd" data-num="5" bindtap="changepro">
+          <view class="{{_num == 5?'active':'ee'}}">22:00</view>
+          <text class="{{_num == 5?'active':'ee'}}">即将开始</text>
+        </view>
+      </view>
+
+      <view class="goods" wx:for='{{goods}}' wx:key="unique" id="{{goods[index].goodsId}}" bindtap="gotodetail">
+        <image src="{{goods[index].imgList[0].imageInName}}" background-size="cover"></image>
+        <view class="goodsinfo">
+          <text class="headline">{{goods[index].goodsInfoName}}</text>
+          <text class="charge">￥{{goods[index].goodsInfoPreferPrice}}.00</text>
+          <text class="oldprice"> ￥128.00 </text>
+          <view class="status">正在抢购</view>
+        </view>
+      </view>
+      <view class="loading" hidden="{{!searchLoading}}">正在载入更多...</view>
+      <view class="loading complete" hidden="{{!searchLoadingComplete}}">已加载全部</view>
+    </view>
+
+
+
+
+
+
+
+
+
+
+    <!--<view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>-->
+  </scroll-view>
+</view>

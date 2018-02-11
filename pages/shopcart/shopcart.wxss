@@ -1,0 +1,179 @@
+/* pages/shopcart/shopcart.wxss */
+
+page {
+  background: #fff;
+  font-family: "微软雅黑";
+}
+
+.list {
+  display: flex;
+  /*background: deeppink;*/
+  border-bottom: 1px solid #eee;
+  padding: 10px 10px 5px 0;
+}
+
+.list .choose {
+  /*background: pink;*/
+  height: 100px;
+  padding: 0 7px;
+  vertical-align: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list .choose .option {
+  background: #fff;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  border: 1px solid #999;
+}
+
+.list .choose .option.selected {
+  border-color: #e3393a;
+  background: url(https://st.360buyimg.com/order/images/cart5.0/shopping.cart.spirits.icns2.png?t=0719)no-repeat #fff;
+  background-size: 41px;
+  background-position-x: -21px;
+  background-position-y: -1px;
+}
+
+.list .imgages {
+  /*width: 80px;
+  height: 80px;*/
+  margin: 0 10px 0 0;
+}
+
+.list .imgages .navimg {
+  width: 80px;
+  height: 80px;
+  margin: 10px 0;
+  vertical-align: top;
+}
+
+.list .info {
+  position: relative;
+}
+
+.list .info>text {
+  display: block;
+  font-size: 12px;
+}
+
+.list .info .title {
+  font-size: 14px;
+  color: #454545;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: box;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.list .info .specify {
+  color: #999;
+}
+
+.list .info .charge {
+  color: #d95454;
+  font-size: 20px;
+  padding: 10px 0 0 0;
+}
+
+.list .info .charge>text {
+  display: inline;
+}
+
+.list .info .buy-num {
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  color: #4c4c4c;
+}
+
+.list .info .buy-num .add, .list .info .buy-num .sub {
+  display: inline-block;
+  width: 30px;
+  line-height: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.list .info .buy-num .goodsNum {
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  font-size: 16px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  /*background: pink;*/
+  border-top: 1px solid #eee;
+}
+
+.footer .allchoice {
+  float: left;
+  font-size: 10px;
+  padding: 12px 7px;
+}
+
+.footer .allchoice .option {
+  background: #fff;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  border: 1px solid #999;
+  margin: 0 auto;
+}
+
+
+.footer .allchoice .option.selectedall {
+  border-color: #e3393a;
+  background: url(https://st.360buyimg.com/order/images/cart5.0/shopping.cart.spirits.icns2.png?t=0719)no-repeat #fff;
+  background-size: 41px;
+  background-position-x: -21px;
+  background-position-y: -1px;
+}
+
+
+.footer .total {
+  float: right;
+  color: #2c2c2c;
+  padding: 5px 10px 0 0;
+  font-size: 16px;
+}
+
+.footer .total .money {
+  text-align: right;
+  color: #e3393a;
+  font-size: 18px;
+}
+
+.footer .total .other {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  color: #999;
+}
+
+.footer .gotonext {
+  float: right;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px 0 15px;
+  background: #e3393a;
+  font-size: 16px;
+  color: #fff;
+}

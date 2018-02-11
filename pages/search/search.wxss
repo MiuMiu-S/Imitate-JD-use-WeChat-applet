@@ -1,0 +1,93 @@
+/* pages/search/search.wxss */
+
+.inputsearch {
+  height: 50px;
+  border: 2px solid #f1f1f1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 85px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  background: grey;
+}
+
+.inputsearch input {
+  width: 70%;
+  height: 30px;
+  background: #e8e8ed;
+  border-radius: 30px;
+  padding-left: 15px;
+  font-size: 14px;
+  margin-left: 5%;
+  /*这里有问题需要在调节*/
+}
+
+.inputsearch button {
+  width: 55px;
+  height: 30px;
+  font-size: 12px;
+}
+
+.message {
+  position: relative;
+  margin-top: 15px;
+}
+
+.message .operation {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 12px;
+  color: red;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+.message .list {
+  display: inline-block;
+  font-size: 12px;
+  background: #e8e8ed;
+  border-radius: 5px;
+  padding: 5px 8px;
+  margin: 10px 0 0 10px;
+}
+
+.searchsubmit {
+  background: #c81623;
+  color: #fff;
+}
+
+.searchresult {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  height: 888px;
+  background: #fff;
+}
+
+.result {
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  padding-left: 25px;
+  color: #333;
+  font-family: "微软雅黑";
+  font-size: 16px;
+}
