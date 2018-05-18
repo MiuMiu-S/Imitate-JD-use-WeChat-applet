@@ -10,6 +10,6 @@
 
 <br>
 
-![购物车.gif](http://upload-images.jianshu.io/upload_images/3888312-d80453c8f73ddf71.gif?imageMogr2/auto-orient/strip)
+![购物车.gif](https://github.com/MiuMiu-S/Imitate-JD-use-WeChat-applet/blob/master/images/3888312-cf99f2e3b923cd79.gif)
 
-购物车的gif图太大了，显不出来，这里也可以看https://www.jianshu.com/p/da9ab5dc05a7
+https://www.jianshu.com/p/da9ab5dc05a7
